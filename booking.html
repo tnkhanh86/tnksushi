@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="Images/favicon.jpg" />
+  <title>Đặt Bàn - Sushi Master</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <a href="index.html" class="header__logo logo">
+          <img src="Images/logo.jpg" alt="Sushi Master Logo">
+          Sushi Master
+        </a>
+        <div class="header__navigation">
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="index.html" class="menu__link">Trang Chủ</a></li>
+                  <li class="menu__item"><a href="about.html" class="menu__link">Về Chúng Tôi</a></li>
+                  <li class="menu__item"><a href="services.html" class="menu__link">Thực Đơn</a></li>
+                  <li class="menu__item"><a href="contact.html" class="menu__link">Liên Hệ</a></li>
+                </ul>
+                <a href="booking.html" class="actions-header__button">Đặt Bàn</a>
+              </nav>
+          </div>
+          <div class="header__actions actions-header">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <video autoplay muted loop playsinline class="main__video">
+          <source src="Video/clip.mp4" type="video/mp4">
+        </video>
+        <div class="main__container">
+          <h3 class="main__caption">Đặt Bàn Trực Tuyến</h3>
+          <h1 class="main__title">Sushi Master</h1>
+          <div class="main__text">
+            Trải nghiệm ẩm thực Nhật Bản chính thống với không gian sang trọng và phục vụ chuyên nghiệp.
+          </div>
+        </div>
+      </section>
+      <section class="page__booking booking">
+        <div class="booking__container">
+          <div class="booking__content">
+            <div class="booking__header">
+              <h2 class="booking__title title">Thông Tin Đặt Bàn</h2>
+              <div class="booking__text">
+                <p>Vui lòng điền thông tin đặt bàn của bạn. Chúng tôi sẽ xác nhận đặt bàn trong thời gian sớm nhất.</p>
+              </div>
+            </div>
+            <form class="booking__form form-booking">
+              <div class="form-booking__row">
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Họ và Tên *</label>
+                  <input type="text" name="fullName" class="form-booking__input" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Số Điện Thoại *</label>
+                  <input type="tel" name="phone" class="form-booking__input" placeholder="Nhập số điện thoại" required>
+                </div>
+              </div>
+              <div class="form-booking__row">
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Email</label>
+                  <input type="email" name="email" class="form-booking__input" placeholder="Nhập email">
+                </div>
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Số Người *</label>
+                  <select name="guests" class="form-booking__select" required>
+                    <option value="">Chọn số người</option>
+                    <option value="1">1 người</option>
+                    <option value="2">2 người</option>
+                    <option value="3">3 người</option>
+                    <option value="4">4 người</option>
+                    <option value="5">5 người</option>
+                    <option value="6">6 người</option>
+                    <option value="7">7 người</option>
+                    <option value="8">8 người</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-booking__row">
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Ngày Đặt *</label>
+                  <input type="date" name="date" class="form-booking__input" required>
+                </div>
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Giờ Đặt *</label>
+                  <select name="time" class="form-booking__select" required>
+                    <option value="">Chọn giờ</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-booking__row">
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Khu Vực</label>
+                  <select name="area" class="form-booking__select">
+                    <option value="">Chọn khu vực</option>
+                    <option value="main">Khu vực chính</option>
+                    <option value="private">Phòng riêng</option>
+                    <option value="bar">Quầy bar</option>
+                    <option value="outdoor">Khu vực ngoài trời</option>
+                  </select>
+                </div>
+                <div class="form-booking__column">
+                  <label class="form-booking__label">Yêu Cầu Đặc Biệt</label>
+                  <input type="text" name="specialRequest" class="form-booking__input" placeholder="Nhập yêu cầu đặc biệt">
+                </div>
+              </div>
+              <div class="form-booking__row">
+                <div class="form-booking__column form-booking__column--full">
+                  <label class="form-booking__label">Ghi Chú</label>
+                  <textarea name="notes" class="form-booking__textarea" placeholder="Nhập ghi chú"></textarea>
+                </div>
+              </div>
+              <div class="form-booking__row">
+                <div class="form-booking__column form-booking__column--full">
+                  <button type="submit" class="form-booking__button button">Xác Nhận Đặt Bàn</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="booking__info">
+            <div class="booking-info__header">
+              <h2 class="booking-info__title title">Thông Tin Liên Hệ</h2>
+              <div class="booking-info__text">
+                <p>Nếu bạn cần hỗ trợ thêm, vui lòng liên hệ với chúng tôi qua các kênh sau:</p>
+              </div>
+            </div>
+            <div class="booking-info__items">
+              <div class="booking-info__item">
+                <div class="booking-info__icon">
+                  <img src="Images/open.png" alt="Thời gian">
+                </div>
+                <div class="booking-info__content">
+                  <h3 class="booking-info__subtitle">Thời Gian Mở Cửa</h3>
+                  <div class="booking-info__text">
+                    Thứ 2 - Chủ Nhật<br>
+                    10:00 - 22:00
+                  </div>
+                </div>
+              </div>
+              <div class="booking-info__item">
+                <div class="booking-info__icon">
+                  <img src="Images/phone.svg" alt="Điện thoại">
+                </div>
+                <div class="booking-info__content">
+                  <h3 class="booking-info__subtitle">Đặt Bàn Qua Điện Thoại</h3>
+                  <div class="booking-info__text">
+                    +84 123 456 789
+                  </div>
+                </div>
+              </div>
+              <div class="booking-info__item">
+                <div class="booking-info__icon">
+                  <img src="Images/email.svg" alt="Email">
+                </div>
+                <div class="booking-info__content">
+                  <h3 class="booking-info__subtitle">Email</h3>
+                  <div class="booking-info__text">
+                    info@sushimaster.com
+                  </div>
+                </div>
+              </div>
+              <div class="booking-info__item">
+                <div class="booking-info__icon">
+                  <img src="Images/address.svg" alt="Địa chỉ">
+                </div>
+                <div class="booking-info__content">
+                  <h3 class="booking-info__subtitle">Địa Chỉ</h3>
+                  <div class="booking-info__text">
+                    123 Đường Sushi<br>
+                    Quận 1, TP.HCM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="booking-info__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.269311477489!2d106.70042331574882!3d10.779160392284766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752d3940f7c33f%3A0x3565475c3365c3fb!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBOZ2_huqFpIE5n4buvIC0gxJDGsOG7nW5nIFF14buRYyBHaW8!5e0!3m2!1svi!2s!4v1709791234567!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="footer__policy">Chính Sách Bảo Mật – Điều Khoản Sử Dụng</a>
+        <a href="" class="footer__logo logo">
+          <img src="Images/logo.jpg" alt="Sushi Master Logo">
+          Sushi Master
+        </a>
+        <div class="footer__copyright">
+          Copyright © 2025 – Bản Quyền Thuộc Về Sushi Master
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html> 
